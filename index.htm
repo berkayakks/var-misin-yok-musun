@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+      .mavi{
+        background-color: blue;
+        transition: 1s;
+      }
+      .sari{
+        text-align: right;
+        background-color: yellow;
+        transition: 1s;
+      }
+      .kirmizi{
+        text-align: right;
+        background-color: red;
+        transition: 1s;
+      }
+      
+      .kutu{
+        margin-top: 20px;
+        cursor: pointer;
+        width: 150px;
+        height: 150px;
+        background-color: rgb(28, 130, 177);
+        position: relative;
+        float: left;
+        margin-left: 20px;
+        transition: 1s;
+      }
+      .sonuc{
+        margin-top: 20px;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: 1s;
+        margin-left: 10%;
+        z-index: -10; 
+      }
+      .sonuc h1{
+       
+      }
+      .satir{
+        height: 150px;
+        margin-bottom: 20px;
+        
+      }
+      .kutu .mühür{
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+        background-color: red;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        border-bottom: 2px solid wheat;
+      }
+      .kutu .cizgi{
+        width: 100%;
+        height: 5px;
+        border-bottom: 1px solid white;
+        position: absolute;
+        margin-top: 30px;
+      }
+      .kutu .numara{
+        position: absolute;
+        left: 50%;
+        top: 60%;
+        transform: translate(-50%,-50%);
+        padding: 10px 20px 10px 20px;
+        background-color: white;
+      }
+      .harici{
+          display: inline-block;
+          text-align: center;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%,-50%);
+          padding: 20px;
+          background-color: red;
+          display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-end">
+        <div class="col-md-2">
+          <div class="mavi"><h1>1</h1></div>
+          <div class="mavi"><h1>5</h1></div>
+          <div class="mavi"><h1>10</h1></div>
+          <div class="mavi"><h1>100</h1></div>
+          <div class="mavi"><h1>500</h1></div>
+          <div class="mavi"><h1>1000</h1></div>
+        </div>
+        <div class="col-md-8 kutular">
+          <div class="row satir">
+            <div class="col-md-3">
+                <div class="kutu">
+                    <div class="mühür"></div>
+                    <h1 class="cizgi"></h1>
+                    <div class="numara">1</div>
+                </div>
+                <div class="sonuc">
+                    <h1></h1>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="kutu">
+                    <div class="mühür"></div>
+                    <h1 class="cizgi"></h1>
+                    <div class="numara">2</div>
+                </div>
+                <div class="sonuc">
+                    <h1></h1>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="kutu">
+                    <div class="mühür"></div>
+                    <h1 class="cizgi"></h1>
+                    <div class="numara">3</div>
+                </div>
+                <div class="sonuc">
+                    <h1></h1>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="kutu">
+                    <div class="mühür"></div>
+                    <h1 class="cizgi"></h1>
+                    <div class="numara">4</div>
+                </div>
+                <div class="sonuc">
+                    <h1></h1>
+                </div>
+            </div>
+        </div>
+        <div class="row satir">
+            <div class="col-md-3">
+                <div class="kutu">
+                    <div class="mühür"></div>
+                    <h1 class="cizgi"></h1>
+                    <div class="numara">5</div>
+                </div>
+                <div class="sonuc">
+                    <h1></h1>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="kutu">
+                    <div class="mühür"></div>
+                    <h1 class="cizgi"></h1>
+                    <div class="numara">6</div>
+                </div>
+                <div class="sonuc">
+                    <h1></h1>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="kutu">
+                    <div class="mühür"></div>
+                    <h1 class="cizgi"></h1>
+                    <div class="numara">7</div>
+                </div>
+                <div class="sonuc">
+                    <h1></h1>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="kutu">
+                    <div class="mühür"></div>
+                    <h1 class="cizgi"></h1>
+                    <div class="numara">8</div>
+                </div>
+                <div class="sonuc">
+                    <h1></h1>
+                </div>
+            </div>
+        </div>
+        <div class="row satir">
+            <div class="col-md-3">
+                <div class="kutu">
+                    <div class="mühür"></div>
+                    <h1 class="cizgi"></h1>
+                    <div class="numara">9</div>
+                </div>
+                <div class="sonuc">
+                    <h1></h1>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="kutu">
+                    <div class="mühür"></div>
+                    <h1 class="cizgi"></h1>
+                    <div class="numara">10</div>
+                </div>
+                <div class="sonuc">
+                    <h1></h1>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="kutu">
+                    <div class="mühür"></div>
+                    <h1 class="cizgi"></h1>
+                    <div class="numara">11</div>
+                </div>
+                <div class="sonuc">
+                    <h1></h1>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="kutu">
+                    <div class="mühür"></div>
+                    <h1 class="cizgi"></h1>
+                    <div class="numara">12</div>
+                </div>
+                <div class="sonuc">
+                    <h1></h1>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="col-md-2 ">
+          <div class="sari"><h1>5000</h1></div>
+          <div class="sari"><h1>10000</h1></div>
+          <div class="sari"><h1>25000</h1></div>
+          <div class="sari"><h1>100000</h1></div>
+          <div class="sari"><h1>250000</h1></div>
+          <div class="kirmizi"><h1>500000</h1></div>
+        </div>
+      </div>
+    </div>
+    <div class="harici">
+        <h1>bankanın teklifi <span class="teklif"></span></h1>
+        <button class="varim">varım</button>
+        <button class="yokum">yokum</button>
+    </div>
+    
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script>
+        
+        $(document).ready(function(){
+            var toplam=0;
+            var final;
+            var teklif=0;
+            var kalan=0;
+            var sayi
+            var sayac=0;
+            var dizi=[];
+            var dizi2=["1","5","10","100","500","1000","5000","10000","25000","100000","250000","500000"];
+            
+            while(sayac<12){
+              sayi=Math.floor(Math.random()*12)
+              if (dizi.indexOf(dizi2[sayi])==-1) {
+                dizi.push(dizi2[sayi]);
+                sayac++;
+              }
+            }
+            for(i=0;i<12;i++){
+                toplam+=parseInt(dizi[i]);
+            }
+            $(".kutu").click(function(){
+              kalan++;
+              teklif++;
+              $(this).css("height","20%");
+              var rakam=parseInt($(this).find(".numara").text())-1;
+              $(this).next(".sonuc").find("h1").text(dizi[rakam]);
+              toplam-=dizi[rakam];
+              if(dizi[rakam]<=1000){
+                $(this).next(".sonuc").find("h1").css("color","blue");
+              }
+              else if(dizi[rakam]<=250000){
+                $(this).next(".sonuc").find("h1").css("color","gold");
+              }
+              else{
+                $(this).next(".sonuc").find("h1").css("color","red");
+              }
+              if(kalan==12){
+                  alert(dizi[rakam]+"TL kazandınız");
+              }
+              
+              
+                for(var i=0;i<5;i++){
+                 if($(".sari:eq("+i+")").text()==dizi[rakam]){
+                  $(".sari:eq("+i+")").animate({width: "0"});
+                  $(".sari:eq("+i+")").css({"color":"rgba(255,255,255,0.1)","background-color":"white"});
+                 }
+                }
+                for(var i=0;i<6;i++){
+                 if($(".mavi:eq("+i+")").text()==dizi[rakam]){
+                  $(".mavi:eq("+i+")").animate({width: "0"});
+                  $(".mavi:eq("+i+")").css({"color":"rgba(255,255,255,0.1)","background-color":"white"});
+                 }
+                }
+                if($(".kirmizi").text()==dizi[rakam]){
+                  $(".kirmizi").animate({width: "0"});
+                  $(".kirmizi").css({"color":"rgba(255,255,255,0.0)","background-color":"white"});
+                }
+              if(teklif==3||teklif==6||teklif==8||teklif==10){
+                  $(".harici").fadeIn();
+                  final=Math.floor(toplam/(12-teklif))
+                  $(".teklif").text(final);
+                
+              }
+             
+            });
+            $(".varim").click(function(){
+                $(".harici").fadeOut();
+                alert(final+"tl kazandınız");
+              });
+              $(".yokum").click(function(){
+                $(".harici").fadeOut();
+              });
+        });
+    </script>
+  </body>
+</html>
